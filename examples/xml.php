@@ -1,5 +1,4 @@
 <?php
-//require(__DIR__ . "/../src/DOMSelector.php");
 require(__DIR__ . "/../vendor/autoload.php");
 
 $XML = <<<EOD
@@ -22,7 +21,7 @@ EOD;
 // parse data from XML
 $doc = new DOMDocument();
 $doc->loadXML($XML);
-$dom = new \trejeraos\DOMSelector($doc);
+$dom = new \trejeraos\DOMSelector($doc, false);
 
 // pull out data from XML
 $arr['email']  = $dom->querySelector('user > email')->nodeValue;
