@@ -29,3 +29,7 @@ $dom = new DOMSelector($doc);
 
 echo $dom->querySelector('.message')->nodeValue;
 ```
+
+### Limitations ###
+
+See: [Limitations of the CssSelector Component](https://symfony.com/doc/2.8/components/css_selector.html#limitations-of-the-cssselector-component)
