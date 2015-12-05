@@ -20,11 +20,17 @@ class DOMSelector extends DOMXpath
     protected $converter;
     
     
-    public function __construct(DOMDocument $doc) 
+    /**
+     * Creates a new DOMSelector object
+     * 
+     * @param DOMDocument $doc   The DOMDocument associated with the DOMSelector.
+     * @param bool        $html  Whether HTML support should be enabled. Disable it for XML documents.
+     */
+    public function __construct(DOMDocument $doc, $html = true) 
     {
         parent::__construct($doc);
         
-        $this->converter = new CssSelectorConverter(false);
+        $this->converter = new CssSelectorConverter($html);
     }
     
     /**
