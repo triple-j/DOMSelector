@@ -38,7 +38,7 @@ class DOMSelector extends DOMXpath
      * 
      * @param string  $filename  CSS Selector
      * 
-     * @return DOMNodeList
+     * @return DOMNodeList  List of matching elements (will be empty if no matches are found).
      */
     public function querySelectorAll($cssSelectors) 
     {
@@ -51,7 +51,7 @@ class DOMSelector extends DOMXpath
      * 
      * @param string  $filename  CSS Selector
      * 
-     * @return DOMNode
+     * @return DOMNode|NULL  The first matching element or NULL if no matches are found.
      */
     public function querySelector($cssSelectors) 
     {
