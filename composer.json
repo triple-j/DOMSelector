@@ -1,12 +1,14 @@
 {
     "name": "trejeraos/dom-selector",
     "description": "This package makes selecting XML elements easy by using CSS like selectors",
-    "type": "package",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Jeremie Jarosh",
-            "email": "jeremie@jarosh.org"
+            "email": "jeremie@jarosh.org",
+            "homepage": "http://trejeraos.com",
+            "role": "Developer"
         }
     ],
     "require": {
